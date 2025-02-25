@@ -1,5 +1,6 @@
 # post_nest_withSQL
 A cozy home for your blog posts.
+This web uses SQL to store and change data.
 
 ## Installation
 1. Clone the repository:
@@ -15,11 +16,8 @@ A cozy home for your blog posts.
 ## Usage
 1. To start the application, open the terminal, and run:
    ```sh
-   nodemon server.js
-2. Open another terminal, run:
-   ```sh
-   nodemon blogapi.js
-3. Open a web page and go to localhost:2000, the home page will be loaded as shown below:
+   nodemon serversql.js
+2. Open a web page and go to localhost:2000, the home page will be loaded as shown below:
    ![screencapture-localhost-2000-2025-02-24-17_09_35](https://github.com/user-attachments/assets/cf88a961-4bdb-4dda-8850-d556169b9cd8)
    The upper section of the page is designated for creating new posts. Once a post is successfully created, it will be displayed in the lower section of the homepage, beneath the heading "Posts."
 

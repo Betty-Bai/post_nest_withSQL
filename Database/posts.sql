@@ -1,0 +1,2 @@
+INSERT INTO your_table 
+VALUES ('(26,Jing,"Lorem ipsum dolor sit amet","consectetur adipiscing elit. Nunc ante leo, dignissim a libero vel, viverra hendrerit quam. Etiam erat neque, suscipit eu felis in, finibus mollis sem.",2025-02-24T17:58:03.723-08:00)', '(27,Chris,"Duis dolor leo","mollis at lacinia quis, tempor pellentesque velit. Mauris congue molestie magna, eget interdum arcu laoreet ac.",2025-02-24T17:58:30.187-08:00)', '(28,Betty,"Nam quis","Phasellus faucibus sem elit, id vestibulum velit convallis at.",2025-02-24T17:58:58.634-08:00)');

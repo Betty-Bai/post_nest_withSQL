@@ -1,0 +1,48 @@
+<%- include("partials/header.ejs") %>
+<body>
+    <div class="gradient-background py-5">
+        <% if (locals.pos) { %>
+            <form method="post" action="/api/edit/<%=pos.id%>">
+                <div class="px-4 pb-5 my-5 text-center">
+                    <h1 class="display-5"><img class="mx-auto mb-4" src="../images/blog.png" alt="" height="57"> Blog Web</h1>
+                    <form action="/newpost" method="post">
+                        <div class="col-lg-6 mx-auto">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Author</span>
+                                <textarea name="author" type="text" class="feedback-input form-control" placeholder="Author"><%=pos.author%></textarea>
+                                <span class="input-group-text">Subject</span>
+                                <textarea name="subject" type="text" class="feedback-input form-control" placeholder="Subject"><%=pos.subject%></textarea>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Content</span>
+                                <textarea name="post" class="feedback-input form-control" placeholder="Post"><%=pos.post%></textarea>
+                            </div>
+                            <div class="d-grid d-sm-flex justify-content-sm-center">
+                                <button type="submit" class="btn btn-success btn-lg px-4 gap-3">Edit Post</button>
+                                <% if (locals.error) { %>
+                                    <p><%= error %></p>
+                                <% }%>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </form>
+        <% } %>
+    </div>
+    <div class="container px-5 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chat-left-dots" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+              </svg> Post</h2>
+        <% if (locals.pos) {%>
+                <div class="feature col pb-5">
+                    <h4><%= pos.subject %></h4>
+                    <p><%= pos.post %></p>
+                    <small class="form-text">Author: <%= pos.author %></small><br>
+                    <small class="form-text"><%= pos.date %></small><br>
+                </div>
+        <% } %>       
+    </div>   
+</body>
+<%- include("partials/footer.ejs") %>

@@ -5,22 +5,19 @@ This web uses API to store and edit data.
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/Betty-Bai/post_nest
-3. Navigate to the directory:
+   git clone https://github.com/Betty-Bai/post_nest_withSQL
+2. Navigate to the directory:
    ```sh
    cd folder-name
-5. Install dependencies:
+3. Install dependencies:
    ```sh
    npm install
    
 ## Usage
 1. To start the application, open the terminal, and run:
    ```sh
-   nodemon server.js
-2. Open another terminal, run:
-   ```sh
-   nodemon blogapi.js
-3. Open a web page and go to localhost:2000, the home page will be loaded as shown below:
+   nodemon serverSQL.js
+2. Open a web page and go to localhost:2000, the home page will be loaded as shown below:
    ![screencapture-localhost-2000-2025-02-24-17_09_35](https://github.com/user-attachments/assets/efc68454-50c4-442b-920d-e0ea3aedbfa9)
    The upper section of the page is designated for creating new posts. Once a post is successfully created, it will be displayed in the lower section of the homepage, beneath the heading "Posts."
 
